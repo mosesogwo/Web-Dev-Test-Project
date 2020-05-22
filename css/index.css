@@ -12,7 +12,6 @@ body {
 
 header {
   padding: 1.5rem;
-  /* padding: 18.04px 20px; */
   display: grid;
   grid-template-columns: 1fr;
   height: 59px;
@@ -54,6 +53,34 @@ nav {
 }
 
 
+/* Culture */
+.our-culture {
+  padding: 1.5rem;
+  display: grid;
+  grid-row-gap: 28px;
+  font-size: 16px;
+  line-height: 24px;
+  padding: 1.5rem;
+}
+
+.culture-title, .culture-desc h3 {
+  color: #002240;
+
+}
+
+.culture-desc p {
+  color: #537089;
+}
+
+.culture-footer p {
+  color: #002240;
+}
+
+
+
+
+
+                            /* TABLET */
 @media (min-width: 768px) {
   header {
     padding: 3rem;
@@ -84,11 +111,14 @@ nav {
 
 }
 
+
+
+                                /* DESKTOP */
 @media (min-width: 1440px) {
   header {
     grid-template-columns: 1fr 2fr;
     grid-template-areas: "brand nav";
-    /* padding: 3rem; */
+    padding: 5rem;
   }
 
   .brand-images {
@@ -141,5 +171,9 @@ nav {
     background: #0688FA;
     mix-blend-mode: normal;
     color: white;
+  }
+
+  .intro-section {
+    padding: 5rem;
   }
 }
