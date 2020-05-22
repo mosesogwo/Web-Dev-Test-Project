@@ -10,9 +10,32 @@ body {
   font-family: 'Source Sans Pro', sans-serif;
 }
 
-header {
-  padding: 1.5rem;
+.container {
+  padding: 1.6rem;
   display: grid;
+}
+
+h1 {
+  font-size: 2rem;
+  line-height: 2rem;
+}
+
+h2 {
+  font-size: 1.75rem;
+  line-height: 1.9rem;
+}
+
+h3 {
+  font-size: 1.625;
+  line-height: 2rem;
+}
+
+h4 {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+header {
   grid-template-columns: 1fr;
   height: 59px;
 }
@@ -39,30 +62,29 @@ nav {
   height: 42px;
 }
 
-.login-btn {
-  color: #0688FA;
-  background: white;
-  border-color: #0688FA;
-}
-
-.demo-btn {
+.blue-btn {
   background: #0688FA;
   mix-blend-mode: normal;
   color: white;
 }
 
+.white-btn {
+  color: #0688FA;
+  background: white;
+  border-color: #0688FA;
+}
+
+/* INTRO */
+
 .intro-section {
   color: #002240;
-  display: grid;
   grid-row-gap: 28px;
   font-size: 16px;
   line-height: 24px;
-  padding: 1.5rem;
 }
 
 .hero-img {
   width: 100%;
-  /* margin-bottom: 1.5rem; */
 }
 
 .intro-title {
@@ -76,19 +98,17 @@ nav {
 
 /* Culture */
 .our-culture {
-  padding: 1.5rem;
-  display: grid;
   grid-row-gap: 28px;
   font-size: 16px;
   line-height: 24px;
 }
 
-.culture-title, .culture-desc h3 {
+.culture-title, .culture-desc h4 {
   color: #002240;
 }
 
-.culture-desc h3 {
-  padding: 0.5rem 0;
+.culture-title h2, .progress-title h2, .offices-title, .investors-title, .culture-desc h4 {
+  padding: 1rem 0;
 }
 
 .culture-desc p {
@@ -102,7 +122,10 @@ nav {
 
 .join-btn {
   width: 100%;
-  height: 49px;
+  font-size: 1rem;
+  font-weight: bold;
+  line-height: 1.25rem;
+  height: 3rem;
 }
 
 
@@ -110,9 +133,8 @@ nav {
 
 /* Office */
 .our-offices {
-  display: grid;
-  padding: 1.5em;
   text-align: center;
+  grid-row-gap: 2.3rem;
 }
 
 .office-desc {
@@ -126,13 +148,13 @@ nav {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  /* margin: auto; */
+  line-height: 1.5rem;
+  margin: auto;
 }
 
 .our-investors {
-  display: grid;
-  padding: 1.5rem;
   text-align: center;
+  grid-row-gap: 2.5rem;
 }
 
 .investor {
@@ -145,11 +167,10 @@ nav {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin: auto;
 }
 
 .future {
-  display: grid;
-  padding: 1.5rem;
   text-align: center;
   width: 20rem;
   height: 23.6rem;
@@ -159,13 +180,11 @@ nav {
 
 /* BOTTOM NAV */
 .bottom-nav {
-  display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-areas: 
     "logo logo"
     "why-saleswhale product"
     "company contact";
-  padding: 1.5rem;
   grid-column-gap: 1.3rem;
   grid-row-gap: 1.75rem;
 }
@@ -192,6 +211,24 @@ nav {
 
 .contact {
   grid-area: contact;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  background: #F4F4F4;
+}
+
+.progress-step {
+  display: flex;
+}
+
+.envelope:after {
+  content: '';
+  display: inline-block;
+  width: 1px;
+  height: 50px;
+  background: #aaa;
 }
 
                             /* TABLET */
@@ -343,6 +380,8 @@ nav {
     grid-area: btn-2;
   }
 
+  /* BOTTOOM NAV */
+
   .bottom-nav {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas: 
@@ -350,6 +389,29 @@ nav {
      "logo company contact";
   }
 
+  /* FOOTER */
+  footer {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
+      "privacy terms social"
+      "c-right c-right c-right";
+  }
+
+  .social-media {
+    grid-area: social;
+  }
+
+  .privacy {
+    grid-area: privacy;
+  }
+
+  .terms {
+    grid-area: terms;
+  }
+
+  .copyright {
+    grid-area: c-right;
+  }
 }
 
 

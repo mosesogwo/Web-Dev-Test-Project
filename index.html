@@ -8,7 +8,7 @@
   <title>My Web Dev Test</title>
 </head>
 <body>
-  <header>
+  <header class="container">
     <div class="brand-images">
       <img src="images/logo.png" alt="saleswhale-logo">
       <img src="images/wordmark.png" alt="saleswhale">
@@ -25,15 +25,14 @@
       </div>
     </nav>
   </header>
-  <section class="intro-section">
-    <img class="hero-img" 
-        srcset=
-        "
-        images/hero-img-630.png 768w,
-        images/hero-img-1219.png 1219w
-        "
-        
-    alt="hero image">
+
+  <section class="container intro-section">
+    <picture>
+      <img src="images/hero-img-268.png" alt="Hero Image" style="width:100%";>
+      <source media="(min-width: 1440px)" srcset="images/hero-img-1219">
+      <source media="(min-width: 768px)" srcset="images/hero-img-630">
+    </picture>
+
     <h1 class="intro-title">A future where AI and humans work hand in hand</h1>
     <div class="intro-body">
       <p>At Saleswhale, we believe that the future of work is Collaborative Intelligence - where machines and AI help humans fulfil their highest potential by automating drudgery and producing for more effective results.</p>
@@ -45,38 +44,49 @@
       <p>The future is where AI and humans work hand in hand, and we’re here to help businesses benefit from that.</p>
     </div>
   </section>
-  <section class="our-culture">
+
+  <section class="container our-culture">
     <div class="culture-title">
       <h2>Our Culture</h2>
       <p>At Saleswhale, we encourage everyone to grow and innovate, while having fun in the process.</p>
     </div>
     <div class="culture-desc tile-1">
       <img src="images/you_glasses 1.png" alt="lady on galsses">
-      <h3>Building for the future</h3>
+      <h4>Building for the future</h4>
       <p>We always challenge the status quo and work hard innovating on a product that not only works, but changes the game for our users. </p>
       
     </div>
     <div class="culture-desc tile-2">
       <img src="images/you_glasses 1.png" alt="lady on galsses">
-      <h3>Promoting trust & transparency
-      </h3>
+      <h4>Promoting trust & transparency</h4>
       <p>We remain completely open, honest and transparent with everyone. This has allowed us to build strong relationships with each other.</p>
     </div>
     <div class="culture-desc tile-3">
       <img src="images/you_glasses 1.png" alt="lady on galsses">
-      <h3>Achieving our very best</h3>
+      <h4>Achieving our very best</h4>
       <p>We believe the success of the company lies within our employees and we constantly challenge each other to learn and level up.</p>
     </div>
     <div class="culture-footer">
       <p>If you are excited by our vision of the future, and want to solve meaningful problems, talk to us!</p>
-      <button class="demo-btn join-btn">Join the team</button>
+      <button class="blue-btn join-btn">Join the team</button>
     </div>
   </section>
-  <section class="our-progress">
-    <h2>Our progress section here!</h2>
+
+  <section class="container our-progress">
+    <div class="progress-title"><h2>Our Progress</h2></div>
+    <div class="progress-step">
+      <div class="date">2015</div>
+      <div class="envelope"><img src="images/mail.png" alt="envelope-icon"></div>
+      <div class="info">Founded in Singapore by Gabriel Lim, Ethan Le, and Venus Wong</div>
+    </div>
+    <div class="progress-step">
+      <div class="date">2016</div>
+      <div class="envelope"><img src="images/mail.png" alt="envelope-icon"></div>
+      <div class="info">Accepted into Y Combinator (S16) and moved to San Francisco</div>
+    </div>
   </section>
 
-  <section class="our-offices">
+  <section class="container our-offices">
     <h2 class="offices-title">Our Offices</h2>
     <div class="office-desc office-tile-1">
       <img src="images/sinon 5.png" alt="sinon-image">
@@ -90,7 +100,7 @@
     </div>
   </section>
 
-  <section class="our-investors">
+  <section class="container our-investors">
     <h2 class="investors-title">Our Investors</h2>
     <div class="investor investor-1">
       <img src="images/YC logo 2.png" alt="YC logo">
@@ -105,7 +115,8 @@
       <img src="images/wavemaker-350 2.png" alt="Wavemaker logo">
     </div>
   </section>
-  <section class="future">
+
+  <section class="container future">
     <h2 class="future-title">See the future</h2>
     <div>
       <button class="white-btn">Get a Demo</button>
@@ -114,7 +125,8 @@
       <button class="blue-btn">Read use cases</button>
     </div>
   </section>
-  <section class="bottom-nav">
+
+  <section class="container bottom-nav">
     <div class="logo">
       <img src="images/logo.png" alt="saleswhale-logo">
       <img src="images/wordmark.png" alt="saleswhale">
@@ -161,15 +173,16 @@
       155B Telok Ayer Street Singapore, 068611</div>
     </div>
   </section>
-  <footer>
+
+  <footer class="container">
     <div class="social-media">
       <img src="images/facebook.png" alt="facebook-link">
       <img src="images/twitter.png" alt="twitter-link">
       <img src="images/linkedin.png" alt="linkedin-link">
     </div>
-    <h4>Privacy</h4>
-    <h4>Terms</h4>
-    <p>© 2020 Saleswhale, Inc. All rights reserved.</p>
+    <h4 class="privacy">Privacy</h4>
+    <h4 class="terms">Terms</h4>
+    <p class="copyright">&copy; 2020 Saleswhale, Inc. All rights reserved.</p>
   </footer>
 </body>
 </html>
