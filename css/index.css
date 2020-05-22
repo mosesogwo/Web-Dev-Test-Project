@@ -1,1 +1,145 @@
-* {padding:0; margin:0;}
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+
+* {
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+header {
+  padding: 1.5rem;
+  /* padding: 18.04px 20px; */
+  display: grid;
+  grid-template-columns: 1fr;
+  height: 59px;
+}
+
+.brand-images {
+  display: flex;
+  align-items: center;
+}
+
+.brand-images img:nth-of-type(2) {
+  margin-left: 5px;
+}
+
+nav {
+  display: none;
+}
+
+.intro-section {
+  color: #002240;
+  display: grid;
+  grid-row-gap: 28px;
+  font-size: 16px;
+  line-height: 24px;
+  padding: 1.5rem;
+}
+
+.hero-img {
+  width: 100%;
+  /* margin-bottom: 1.5rem; */
+}
+
+.intro-title {
+  font-size: 32px;
+}
+
+.intro-body p {
+  margin-bottom: 26px;
+}
+
+
+@media (min-width: 768px) {
+  header {
+    padding: 3rem;
+  }
+
+  .intro-section {
+    padding: 3rem;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 2.5rem;
+    grid-template-areas: 
+      "hero-img hero-img"
+      "title body";
+  }
+
+  .hero-img {
+    grid-area: hero-img;
+  }
+
+  .intro-title {
+    /* font-size: 32px; */
+    grid-area: title;
+  }
+
+  .intro-body {
+    grid-area: body;
+  }
+
+
+}
+
+@media (min-width: 1440px) {
+  header {
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas: "brand nav";
+    /* padding: 3rem; */
+  }
+
+  .brand-images {
+    grid-area: brand
+  }
+
+  nav {
+    grid-area: nav;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 23px;
+  }
+
+  nav ul {
+    list-style-type: none;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    width: 48%;
+  }
+
+  nav li{
+    display: inline-block;
+  }
+
+  nav li a {
+    color: #002240;
+    text-decoration: none;
+  }
+
+  .login-btn, .demo-btn {
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 23px;
+    width: 151px;
+    height: 42px;
+  }
+
+  .login-btn {
+    color: #0688FA;
+    background: white;
+    border-color: #0688FA;
+  }
+
+  .demo-btn {
+    background: #0688FA;
+    mix-blend-mode: normal;
+    color: white;
+  }
+}
