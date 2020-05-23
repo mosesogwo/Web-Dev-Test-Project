@@ -35,6 +35,11 @@ h4 {
   line-height: 1.5rem;
 }
 
+h5 {
+  font-size: 0.9rem;
+  line-height: 1.5rem;
+}
+
 header {
   grid-template-columns: 1fr;
   height: 59px;
@@ -200,8 +205,8 @@ nav {
     position: absolute;
     right: 0;
     z-index: -1;
+    backface-visibility: hidden;
     -webkit-backface-visibility: hidden;
-
     top: 0;
     transform: skewY(10deg);
     transform-origin: 100% 0;
@@ -235,17 +240,22 @@ nav {
 
 /* BOTTOM NAV */
 .bottom-nav {
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 0.8fr 1fr;
   grid-template-areas: 
     "logo logo"
     "why-saleswhale product"
     "company contact";
   grid-column-gap: 1.3rem;
   grid-row-gap: 1.75rem;
+  font-size: 1rem;
 }
 
 .bottom-nav ul {
   list-style-type: none;
+}
+
+.bottom-nav li {
+  margin: 1rem 0;
 }
 
 .bottom-nav .logo {
@@ -268,10 +278,47 @@ nav {
   grid-area: contact;
 }
 
+.contact h4 {
+  margin: 1rem 0;
+}
+
+.contact h5 {
+  margin-top: 0.5rem;
+}
+
 /* FOOTER */
 footer {
   text-align: center;
   background: #F4F4F4;
+  height: 23.3rem;
+  grid-template-areas: 
+  "social"
+  "privacy"
+  "terms"
+  "c-right" "c-right" "c-right"
+  "bottom-deco" "bottom-deco" "bottom-deco";
+  align-items: center;
+}
+
+.social-media {
+  grid-area: social;
+  display: flex;
+  justify-content: space-evenly;
+  width: 50%;
+  margin: auto;
+}
+
+.privacy {
+  grid-area: privacy;
+}
+
+.terms {
+  grid-area: terms;
+}
+
+.copyright {
+  grid-area: c-right;
+  font-size: 0.875rem;
 }
 
 .progress-step {
@@ -450,22 +497,6 @@ footer {
     grid-template-areas: 
       "privacy terms social"
       "c-right c-right c-right";
-  }
-
-  .social-media {
-    grid-area: social;
-  }
-
-  .privacy {
-    grid-area: privacy;
-  }
-
-  .terms {
-    grid-area: terms;
-  }
-
-  .copyright {
-    grid-area: c-right;
   }
 }
 
