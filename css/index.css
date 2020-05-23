@@ -159,6 +159,7 @@ nav {
 .our-investors {
   text-align: center;
   grid-row-gap: 2.5rem;
+  margin-bottom: 5rem;
 }
 
 .investor {
@@ -176,15 +177,36 @@ nav {
 
 .future {
   text-align: center;
-  width: 20rem;
+  width: 100%;
   height: 23.6rem;
   background: #329DFA;
   border-radius: 5px;
   margin: auto;
+  margin-top: 1.6rem;
   color: #FFFFFF;
   align-content: center;
-
+  justify-items: center;
   grid-template-rows: 2fr 1fr;
+  position: relative;
+  z-index: 1;
+}
+
+.future::before {
+    background: inherit;
+    content: '';
+    display: block;
+    height: 50%;
+    left: 0;
+    position: absolute;
+    right: 0;
+    z-index: -1;
+    -webkit-backface-visibility: hidden;
+
+    top: 0;
+    transform: skewY(10deg);
+    transform-origin: 100% 0;
+  }
+
 }
 
 .future-title {
@@ -192,10 +214,9 @@ nav {
 }
 
 .future-btns {
-  align-self: center;
+  /* align-self: center; */
   display: flex;
   flex-direction: column;
-  /* height: 70%; */
   margin-bottom: 1.875rem;
 }
 
