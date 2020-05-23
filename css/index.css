@@ -290,14 +290,16 @@ nav {
 footer {
   text-align: center;
   background: #F4F4F4;
-  height: 23.3rem;
+  /* height: 23.3rem; */
+  grid-template-rows: 1fr 1fr 3fr 3fr;
   grid-template-areas: 
   "social"
   "privacy"
   "terms"
-  "c-right" "c-right" "c-right"
-  "bottom-deco" "bottom-deco" "bottom-deco";
-  align-items: center;
+  "c-right"
+  "bottom-deco";
+  grid-row-gap: 2.44rem;
+  /* justify-content: center; */
 }
 
 .social-media {
@@ -319,6 +321,40 @@ footer {
 .copyright {
   grid-area: c-right;
   font-size: 0.875rem;
+}
+
+.bottom-deco {
+  background: #F4F4F4;
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-areas: "all";
+  align-items: end;
+  align-content: center;
+  /* position: relative; */
+  width: 100%;  /* background-image: url(../images/Ellipse\ 12.png), url(../images/Vector\ 3.png), url(../images/Vector\ 4.png);
+  background-position: right bottom, left top;
+  background-repeat: no-repeat;
+  background-size: cover; */
+  
+  /* text-align: center; */
+}
+
+
+.ellipse, .vector-3, .vector-4 {
+  grid-area: all;
+  object-fit: contain;
+  width: 100%;
+}
+
+.ellipse {
+  width: 60%;
+  height: 60%;
+  margin: auto;
+  align-self: center;
+}
+
+.vector-3 {
+  z-index: 2;
 }
 
 .progress-step {
