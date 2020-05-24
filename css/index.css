@@ -148,7 +148,6 @@ nav{
     color:#002240;
     text-align:center;
     grid-row-gap:2.5rem;
-    background:linear-gradient(to bottom,#fff5f5 25%,#fff 0 100%);
     background-image:url(../images/blue-bg.png),url(../images/yellow-bg.png),url(../images/investors-bg.png);
     background-repeat:no-repeat;
     background-size:auto,27%,contain;
@@ -182,7 +181,7 @@ nav{
     align-content:center;
     justify-items:center;
     grid-template-rows:1fr 1fr;
-    background:url('../images/Vector\ 19\ \(1\).png');
+    background:url('../images/Vector19.png');
     background-repeat:no-repeat;
     background-size:cover
 }
@@ -290,7 +289,7 @@ footer{
 .bottom-deco{
     grid-area:bottom-deco;
     background:#f4f4f4;
-    background-image:url('../images/Vector\ 3.png'),url('../images/Vector\ 4.png'),url('../images/Ellipse\ 12.png');
+    background-image:url('../images/Vector3.png'),url('../images/Vector4.png'),url('../images/Ellipse12.png');
     background-repeat:no-repeat;
     background-size:100%,100%,30%;
     background-position:0 1rem,0 1rem,45% 1rem;
