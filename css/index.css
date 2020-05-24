@@ -438,9 +438,10 @@ footer{
         grid-template-columns:1fr 1fr;
         grid-template-areas:"title title" "investor-1 investor-2" "investor-3 investor-4";
         text-align:center;
-        background-size:10%,27%,100% 50%;
+        background-size:10%, 10%, 100% 60%;
         background-image:url(../images/blue-bg.png),url(../images/yellow-bg.png),url(../images/investors-bg.png);
-        background-position:95% 7.4rem,5rem 10rem,0 0
+        /* background-position:95% 7.4rem,5rem 10rem,0 0 */
+        background-position:100% 5rem, 0 10rem,0 0
     }
     .investors-title{
         grid-area:title;
@@ -480,7 +481,9 @@ footer{
     }
     .future-btns button{
         width:auto;
-        padding:1rem
+        padding:1rem;
+        font-size:1rem;
+        line-height: unset;
     }
     .bottom-nav{
         grid-template-columns:1fr 1fr 1fr;
