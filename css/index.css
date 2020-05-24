@@ -48,14 +48,6 @@ header{
 nav{
     display:none
 }
-.demo-btn,.login-btn{
-    border-radius:5px;
-    font-weight:700;
-    font-size:18px;
-    line-height:23px;
-    width:151px;
-    height:42px
-}
 .blue-btn{
     background:#0688fa;
     color:#fff;
@@ -69,6 +61,19 @@ nav{
     mix-blend-mode:normal;
     box-shadow:0 5px 15px rgba(0,0,0,.3);
     border-radius:5px
+}
+.demo-btn,.login-btn{
+  border-radius:5px;
+  font-weight:700;
+  font-size:18px;
+  line-height:23px;
+  width:151px;
+  height:42px;
+  box-shadow: unset
+}
+.login-btn{
+  border:1px solid #0688FA;
+  color: #0688FA
 }
 .hero-img{
     background-image:url(../images/hero-img-268.png);
@@ -247,6 +252,7 @@ nav{
 footer{
     text-align:center;
     background:#f4f4f4;
+    display:grid;
     grid-template-rows:1fr 1fr 1fr 1fr;
     grid-template-areas:"social" "privacy" "terms" "c-right" "bottom-deco";
     grid-row-gap:2.44rem;
@@ -254,7 +260,7 @@ footer{
 }
 .footer{
     padding:0;
-    padding-top:1.6rem
+    padding-top:1.6rem;
 }
 .footer a{
     color:#002240;
@@ -346,7 +352,6 @@ footer{
     grid-area:info;
     font-weight:600;
     color:#002240;
-    line-height:1.5rem;
     justify-self:start
 }
 .first-date,.first-envelope,.first-info{
@@ -529,7 +534,9 @@ footer{
     header{
         grid-template-columns:1fr 2fr;
         grid-template-areas:"brand nav";
-        padding:5rem
+        padding:5rem;
+        font-size:18px;
+        line-height:23px;
     }
     .brand-images{
         grid-area:brand
@@ -557,15 +564,94 @@ footer{
         color:#002240;
         text-decoration:none
     }
-    .intro-section{
-        padding:5rem
+    .container{
+        padding:5rem;
+        padding-bottom:3rem
+    }
+    .intro-title{
+        font-size:58px;
+        line-height:62px;
+        padding-right:8rem
+    }
+    .intro-body{
+        font-size:18px
     }
     .hero-img{
         background-image:url(../images/hero-img-1219.png);
         height:18.75rem
     }
+    .culture-header, .progress-title, .offices-title, .investors-title{
+        font-size:58px;
+        line-height:62px
+    }
+    .culture-intro{
+        font-size:21px;
+        line-height:38px
+    }
+    .culture-desc-header{
+        font-size:21px;
+        font-size:34px
+    }
+    .culture-info{
+        font-size:18px;
+        line-height:32px
+    }
+    .culture-footer-info{
+        font-size:21px;
+        line-height:48px
+    }
+    .join-btn{
+        width:198px;
+        height:59px
+    }
+    .progress-step{
+        font-size:26px;
+        line-height:34px
+    }
+    .office-desc, .investor{
+      height:283px;
+      width:528px;
+    }
+    .office-loc{
+        font-size:32px;
+        line-height:34px
+    }
+    .office-address{
+        font-size: 18px;
+        line-height:32px
+    }
+    .future-title{
+        align-self:start;
+        font-size:48px
+    }
+    .future-btns button{
+        width:272px;
+        height:62px
+    }
     .bottom-nav{
         grid-template-columns:1fr 1fr 1fr 1fr;
-        grid-template-areas:"logo why-saleswhale product company contact"
+        grid-template-areas:"logo why-saleswhale product company contact";
+        font-size:18px;
+        line-height:42px
+    }
+    .contact h5{
+        font-size: 18px;
+        line-height: 42px
+    }
+    .footer a, .copyright{
+        font-size:18px;
+        line-height:24px
+    }
+    .social-media img{
+        width: 40.19px;
+        height: 40.19px;
+    }
+    .bottom-deco{
+        grid-area:decor;
+        background-image:url(../images/light-blue-bg-desk.png),url(../images/blue-bg-desk.png),url(../images/ellipse-desk.png);
+        background-repeat:no-repeat;
+        background-size:contain;
+        background-position:0 100%,0 100%,45% 100%;
+        height:5.54rem
     }
 }
