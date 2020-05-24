@@ -145,7 +145,12 @@ nav {
   color: #002240;
   text-align: center;
   grid-row-gap: 2.3rem;
+  background-image: url(../images/offices-bg.png);
+  background-position: 0 7.5rem;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
+
 
 .offices-title {
   padding: 0;
@@ -171,7 +176,13 @@ nav {
   color: #002240;
   text-align: center;
   grid-row-gap: 2.5rem;
-  margin-bottom: 5rem;
+  /* margin-bottom: 5rem; */
+  background: linear-gradient(to bottom, 
+  #fff5f5 25%, white 0% 100%);
+  background-image: url(../images/blue-bg.png), url(../images/yellow-bg.png), url(../images/investors-bg.png);
+  background-repeat: no-repeat;
+  background-size: auto, 30%, contain;
+  background-position: 100% 7.4rem, 0rem 10rem, 0 0;
 }
 
 .investors-title {
@@ -201,14 +212,17 @@ nav {
   margin: auto;
   margin-top: 1.6rem;
   color: #FFFFFF;
+  align-items: center;
   align-content: center;
   justify-items: center;
-  grid-template-rows: 2fr 1fr;
-  position: relative;
-  z-index: 1;
+  grid-template-rows: 1fr 1fr;
+  background: url(../images/Vector\ 19\ \(1\).png)
+
 }
 
-.future::before {
+
+
+/* .future::before {
     background: inherit;
     content: '';
     display: block;
@@ -222,12 +236,13 @@ nav {
     top: 0;
     transform: skewY(10deg);
     transform-origin: 100% 0;
-  }
+  } */
 
 }
 
 .future-title {
   align-self: center;
+  padding-top: 10rem;
 }
 
 .future-btns {
