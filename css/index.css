@@ -319,7 +319,6 @@ nav{
     grid-area:envelope;
     position:relative;
     z-index:2;
-    /* background:#eff8ff; */
     background:#fff;
     height:3.5rem;
     width:3.5rem;
@@ -501,7 +500,7 @@ nav{
         background-size:100% 30%,100% 30%,20%;
         background-position:0 100%,0 90%, 50% 90%;
         padding-top: 2rem;
-        padding-bottom: 6rem;
+        padding-bottom: 6rem
     }
     .social-media{
         margin:0;
@@ -633,13 +632,13 @@ nav{
     }
     .social-media img{
         width: 40.19px;
-        height: 40.19px;
+        height: 40.19px
     }
     .bottom-deco{
         grid-area:decor;
         background-image:url(../images/light-blue-bg-desk.png),url(../images/blue-bg-desk.png),url(../images/ellipse-desk.png);
         background-repeat:no-repeat;
         background-size:cover, cover, 50%;
-        background-position:0 100%,0 100%,70% 100%;
+        background-position:0 100%,0 100%,70% 100%
     }
 }
