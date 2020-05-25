@@ -98,10 +98,10 @@ nav{
     font-size:16px;
     line-height:24px
 }
-.culture-desc h4,.culture-title{
+.culture-desc-header,.culture-title{
     color:#002240
 }
-.culture-desc h4,.culture-title h2,.investors-title,.offices-title,.progress-title h2{
+.culture-desc-header,.culture-header,.investors-title,.offices-title,.progress-title h2{
     padding:1rem 0
 }
 .culture-desc p{
@@ -592,7 +592,7 @@ footer{
     }
     .culture-desc-header{
         font-size:21px;
-        font-size:34px
+        line-height:34px
     }
     .culture-info{
         font-size:18px;
