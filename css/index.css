@@ -36,7 +36,11 @@ button:hover{
 }
 header{
     grid-template-columns:1fr;
-    height:59px
+    height:59px;
+    width:100%;
+    position:fixed;
+    background:#FFFFFF;
+    margin-top:-60px
 }
 .brand-images{
     display:flex;
@@ -69,11 +73,11 @@ nav{
   line-height:23px;
   width:151px;
   height:42px;
-  box-shadow: unset
+  box-shadow:unset
 }
 .login-btn{
   border:1px solid #0688FA;
-  color: #0688FA
+  color:#0688FA
 }
 .hero-img{
     background-image:url(../images/hero-img-268.png);
@@ -82,6 +86,7 @@ nav{
     height:18.5rem
 }
 .intro-section{
+    margin-top:60px;
     color:#002240;
     row-gap:28px;
     font-size:16px;
@@ -360,15 +365,20 @@ nav{
     .container{
         padding:3rem
     }
+    header{
+      position:static;
+      margin-top:unset;
+    }
     .brand-images img:nth-of-type(2){
       margin-left:25px
     }
     .brand-images img {
-        transform-origin: top left;
-        transform: scale(1.5)
+        transform-origin:top left;
+        transform:scale(1.5)
     }
     .intro-section{
         padding-top:2rem;
+        margin-top:0;
         grid-template-columns:1fr 1fr;
         column-gap:2.5rem;
         grid-template-areas:"hero-img hero-img" "title body"
@@ -488,7 +498,7 @@ nav{
         width:auto;
         padding:0 1rem;
         font-size:1rem;
-        line-height: unset;
+        line-height:unset;
     }
     .bottom-nav{
         grid-template-columns:1fr 1fr 1fr;
@@ -506,17 +516,19 @@ nav{
         background-repeat:no-repeat;
         background-size:100% 30%,100% 30%,20%;
         background-position:0 100%,0 90%, 50% 90%;
-        padding-top: 2rem;
-        padding-bottom: 6rem
+        padding:0 3rem;
+        padding-top:2rem;
+        padding-bottom:6rem
     }
     .social-media{
         margin:0;
-        margin-left:auto
+        margin-left:auto;
+        justify-content:space-between;
+        width:30%
     }
     .copyright,.privacy,.terms{
         align-self:start;
         justify-self:start;
-        margin-left:2rem
     }
 }
 @media (min-width:1440px){
@@ -573,7 +585,7 @@ nav{
         height:18.75rem
     }
     .our-culture{
-          column-gap: 80px
+          column-gap:80px
     }
     .culture-header, .progress-title, .offices-title, .investors-title{
         font-size:58px;
@@ -612,7 +624,7 @@ nav{
         line-height:34px
     }
     .office-address{
-        font-size: 18px;
+        font-size:18px;
         line-height:32px
     }
     .future-title{
@@ -630,22 +642,20 @@ nav{
         line-height:42px
     }
     .contact h5{
-        font-size: 18px;
-        line-height: 42px
+        font-size:18px;
+        line-height:42px
+    }
+    .footer{
+        padding-left:5rem;
+        padding-right:5rem;
+        justify-items:start
     }
     .footer a, .copyright{
         font-size:18px;
         line-height:24px
     }
     .social-media img{
-        width: 40.19px;
-        height: 40.19px
-    }
-    .bottom-deco{
-        grid-area:decor;
-        background-image:url(../images/light-blue-bg-desk.png),url(../images/blue-bg-desk.png),url(../images/ellipse-desk.png);
-        background-repeat:no-repeat;
-        background-size:cover, cover, 50%;
-        background-position:0 100%,0 100%,70% 100%
+        width:40.19px;
+        height:40.19px
     }
 }
